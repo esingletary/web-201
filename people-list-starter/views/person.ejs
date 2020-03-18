@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title><%= person.first_name %> <%= person.last_name %></title>
+    <% if (person.alive) { %>
+    <style>
+        body {
+            background: mediumseagreen;
+        }
+    </style>
+    <% } else { %>
+    <style>
+        body {
+            background: red;
+        }
+    </style>
+    <% } %>
+</head>
+
+<body>
+    <h3>Person Information</h3>
+    <p>Name: <%= person.first_name %> <%= person.last_name %></p>
+    <p>Occupation: <%= person.job %></p>
+    <img src='<%= person.avatar %>' />
+</body>
+
+</html>
